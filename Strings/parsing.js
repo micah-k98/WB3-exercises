@@ -1,12 +1,20 @@
 "use strict"
 
-let fullName = "Brenda Kaye";
+function parseAndDisplayName(fullName)
+{
+    let end = fullName.indexOf(" ");
+    let firstName = fullName.substring(0, end);
+    let lastName = fullName.substring(end + 1);
+    
+    
+    console.log("Name: " + fullName);
+    console.log("First Name: " + firstName);
+    console.log("Last Name: " + lastName);
+    console.log("\n");
+}
 
-let end = fullName.indexOf(" ");
-let firstName = fullName.substring(0, end);
-let lastName = fullName.substring(end + 1);
+parseAndDisplayName("Brenda Kaye");
+parseAndDisplayName("Ian Auston");
+parseAndDisplayName("Siddalee Grace");
 
 
-console.log("Name: " + fullName);
-console.log("First Name: " + firstName);
-console.log("Last Name: " + lastName);
