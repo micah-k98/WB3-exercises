@@ -8,6 +8,8 @@ function parseAndDisplayName(givenName)
     let middleName = givenName.substring(end + 1, end2);
     let lastName = givenName.substring(end2 + 1);
 
+    console.log("Name: " + givenName);
+
     if (end == -1)
     {
         onlyName(givenName);
@@ -24,28 +26,24 @@ function parseAndDisplayName(givenName)
 
 function onlyName(givenName)
 {
-    console.log("Name: " + givenName);
-    console.log("Only Name: " + givenName);
+    console.log("Only Name: " + givenName + "\n");
 }
 
 function firstAndLastName(givenName, firstName, lastName)
 {
-    console.log("Name: " + givenName);
     console.log("First Name: " + firstName);
-    console.log("Last Name: " + lastName);
+    console.log("Last Name: " + lastName + "\n");
 }
 
 function firstMiddleLastName(givenName, firstName, middleName, lastName)
 {
-    console.log("Name: " + givenName);
     console.log("First Name: " + firstName);
     console.log("Middle Name: " + middleName);
-    console.log("Last Name: " + lastName);
+    console.log("Last Name: " + lastName + "\n");
 }
 
-
-parseAndDisplayName("Cher Auston Smith");
-// parseAndDisplayName("Ian Auston");
-// parseAndDisplayName("Siddalee Grace");
+parseAndDisplayName("Cher");
+parseAndDisplayName("Brenda Kaye");
+parseAndDisplayName("Dana Lynn Wyatt");
 
 
